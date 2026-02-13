@@ -1,29 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Minha Amazon Store</title>
-<link rel="stylesheet" href="style.css">
+<title>Minha Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{margin:0;font-family:Arial;background:#f3f3f3}
+
+/* TOP BAR */
+.topbar{
+background:#131921;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{font-size:28px;font-weight:bold}
+
+/* SEARCH */
+.search{
+width:40%;
+padding:8px;
+border-radius:5px;
+border:none;
+}
+
+/* MENU */
+.menu{
+background:#232f3e;
+color:white;
+padding:10px;
+display:flex;
+gap:20px;
+overflow:auto;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+background:url("https://images.unsplash.com/photo-1607082350899-7e105aa886ae");
+background-size:cover;
+padding:90px;
+color:white;
+text-align:center;
+font-size:40px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img{width:100%;height:180px;object-fit:cover}
+
+.btn{
+background:#ff9900;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+border-radius:5px;
+font-weight:bold;
+}
+
+.footer{
+background:#131921;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
 </head>
+
 <body>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="store.html">Shop</a>
-</nav>
-
-<header>
-<h1>🛒 Minha Amazon Store</h1>
-<p>Best Amazon Deals & Trending Products</p>
-</header>
-
-<section class="products">
-<a href="store.html">
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/263/263115.png">
-<h2>Start Shopping</h2>
+<!-- HEADER -->
+<div class="topbar">
+<div class="logo">Minha Store</div>
+<input class="search" placeholder="Search Amazon Deals...">
+<div>Affiliate Store</div>
 </div>
-</a>
-</section>
+
+<!-- CATEGORY MENU -->
+<div class="menu">
+<a href="#">Electronics</a>
+<a href="#">Fashion</a>
+<a href="#">Perfumes</a>
+<a href="#">Home</a>
+<a href="#">Mobiles</a>
+<a href="#">Sports</a>
+<a href="#">Gaming</a>
+<a href="#">Kids</a>
+<a href="#">Deals</a>
+</div>
+
+<!-- HERO BANNER -->
+<div class="hero">
+🔥 Trending Amazon Deals 🔥
+</div>
+
+<!-- PRODUCTS -->
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<h3>Electronics</h3>
+<a class="btn" href="https://amzn.to/4657XvM">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47">
+<h3>Fashion</h3>
+<a class="btn" href="https://amzn.to/4tzgaCl">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
+<h3>Perfumes</h3>
+<a class="btn" href="https://amzn.to/4bTy0tw">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f">
+<h3>Home & Kitchen</h3>
+<a class="btn" href="https://amzn.to/4rOgwU8">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1510557880182-3c29c0f71c64">
+<h3>Mobiles</h3>
+<a class="btn" href="https://amzn.to/40dTZUN">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+<h3>Sports</h3>
+<a class="btn" href="https://amzn.to/4aMNP4e">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+<h3>Gaming</h3>
+<a class="btn" href="https://amzn.to/4bTP6aH">Shop Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+<h3>Baby & Kids</h3>
+<a class="btn" href="https://amzn.to/4agoCyV">Shop Now</a>
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Minha Store | Amazon Affiliate Website
+</div>
 
 </body>
 </html>
