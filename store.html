@@ -2,23 +2,44 @@
 <html>
 <head>
 <title>Shop</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
+<body>
 
-<body style="font-family:Arial;text-align:center">
+<nav>
+<a href="index.html">Home</a>
+<a href="store.html">Shop</a>
+</nav>
 
-<h1>🔥 Amazon Shop</h1>
+<header><h1>🔥 Amazon Trending Store</h1></header>
 
-<a href="https://amzn.to/40dTZUN">
-<h2>Amazon Echo Studio</h2>
-</a>
+<div class="search">
+<input id="search" onkeyup="searchProducts()" placeholder="Search products...">
+</div>
 
-<a href="https://amzn.to/4bTy0tw">
-<h2>Estee Lauder Perfumes</h2>
-</a>
+<section class="products">
 
-<a href="https://amzn.to/4aMNP4e">
-<h2>Adidas Store</h2>
-</a>
+<a href="https://amzn.to/40dTZUN"><div class="card">
+<img src="https://m.media-amazon.com/images/I/71IUt9l9k+L._AC_SL1500_.jpg">
+<h3>Amazon Echo Studio</h3>
+</div></a>
 
+<a href="https://amzn.to/4bTy0tw"><div class="card">
+<img src="https://m.media-amazon.com/images/I/61q4nZk0hML._AC_SL1500_.jpg">
+<h3>Estee Lauder Perfumes</h3>
+</div></a>
+
+<a href="https://amzn.to/4aMNP4e"><div class="card">
+<img src="https://m.media-amazon.com/images/I/71HMyqG6MRL._AC_UL1500_.jpg">
+<h3>Adidas Store</h3>
+</div></a>
+
+<a href="https://amzn.to/4tzgaCl"><div class="card">
+<img src="https://m.media-amazon.com/images/I/71R0eX0YxZL._AC_UL1500_.jpg">
+<h3>PrettyGarden Dresses</h3>
+</div></a>
+
+</section>
 </body>
 </html>
